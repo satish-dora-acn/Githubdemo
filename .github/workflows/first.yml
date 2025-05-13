@@ -20,10 +20,10 @@ jobs:
           java-version: '17'
 
       - name: Compile Java application
-        run: javac WelcomeApp.java
+        run: javac src/main/java/com/example/WelcomeApp.java
 
       - name: Run Java application
-        run: java WelcomeApp &
+        run: java src/main/java/com/example/WelcomeApp.java &
 
       - name: Wait for server to start
         run: sleep 2
